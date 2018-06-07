@@ -12,8 +12,8 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Signup Here!</a></li>
-                    <li><a href="#">Login if you already have an account</a></li>
+                    <li>{!! link_to_route('signup.get', 'SIGN UP HERE!') !!}</li>
+                    <li><a href="#">LOGIN!<br>(If You already Have an Account)</a></li>
                 </ul>
             </div>
         </div>
