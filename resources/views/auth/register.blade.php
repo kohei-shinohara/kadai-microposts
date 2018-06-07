@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="text-center">
-        <h1>Sign Up Here!</h1>
+        <h1>SIGNING UP</h1>
     </div>
 
     <div class="row">
@@ -10,26 +10,26 @@
 
             {!! Form::open(['route' => 'signup.post']) !!}
                 <div class="form-group">
-                    {!! Form::label('name', 'Name') !!}
+                    {!! Form::label('name', 'NAME') !!}
                     {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('email', 'Email') !!}
+                    {!! Form::label('email', 'EMAIL') !!}
                     {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('password', 'Password') !!}
+                    {!! Form::label('password', 'PASSWORD') !!}
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('password_confirmation', 'Confirmation') !!}
+                    {!! Form::label('password_confirmation', 'CONFIRM YOUR PASSWORD') !!}
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
 
-                {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
+                {!! Form::submit('SIGN UP', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
         </div>
     </div>
