@@ -15,7 +15,7 @@
         </aside>
          <div class="col-xs-8">
             <ul class="nav nav-tabs nav-justified">
-                <li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">TIMELINE <span class="badge">{{ $count_microposts }}</span></a></li>
+                <li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">MyPOSTs <span class="badge">{{ $count_microposts }}</span></a></li>
                 <li role="presentation" class="{{ Request::is('users/*/followings') ? 'active' : '' }}"><a href="{{ route('users.followings', ['id' => $user->id]) }}">FOLLOWINGs <span class="badge">{{ $count_followings }}</span></a></li>
                 <li role="presentation" class="{{ Request::is('users/*/followers') ? 'active' : '' }}"><a href="{{ route('users.followers', ['id' => $user->id]) }}">FOLLOWERs <span class="badge">{{ $count_followers }}</span></a></li>
             </ul>
@@ -27,7 +27,9 @@
                       </div>
                   {!! Form::close() !!}
             @endif
+
             @if (count($microposts) > 0)
+            
                 @include('microposts.microposts', ['microposts' => $microposts])
             @endif
         </div>
