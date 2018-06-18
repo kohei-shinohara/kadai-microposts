@@ -21,6 +21,7 @@
                                 <li>{!! link_to_route('users.show', 'See MyPROFILE', ['id' => Auth::id()]) !!}</li>
                                 <li>{!! link_to_route('users.followings', 'See FOLLOWINGs', ['id' => Auth::id()]) !!}</li>
                                 <li>{!! link_to_route('users.followers', 'See FOLLOWERs', ['id' => Auth::id()]) !!}</li>
+                                <li>{!! link_to_route('users.favoritings', 'See FAVORITEs', ['id' => Auth::id()]) !!}</li>
                             
                          
                                 <li role="separator" class="divider"></li>
